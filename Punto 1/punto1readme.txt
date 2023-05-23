@@ -112,7 +112,7 @@ Instalar localmente xxamp
 Creamos una carpeta en la siguiente ruta dentro de nuestra maquina fisica
 C:\xampp\htdocs\punto1parcialfinal
 Copiamos el archivo php del repositorio de git
-phphtmlbooks
+phphtmllibrary
 Abrimos el panel de xxamp
 Damos start al service de appache
 Entramos al navegador a la ruta 
