@@ -1,5 +1,5 @@
--Crear la carpeta para guardar el vagrant file junto con 
-los archivos .sh del aprovisionamiento
+-Crear la carpeta para guardar el vagrant file junto con los archivos .sh del aprovisionamiento y una carpeta que estara sincronizada con vagrant en nuestro caso se llama Syncvagrant.
+-Dentro de Syncvagrant copiamos un archivo de video el cual usaremos mas adelante
 -Abrir la consola del sistema
 -Por medio de comandos entrar a la carpeta donde copiaste el 
 vagrantfile y los archivos de aprovisionamiento
@@ -39,6 +39,9 @@ SyslogIdentifier=Streama
 
 [Install]
 WantedBy=multi-user.target
+-Desde la consola de la maquina streama copiamos el archivo de video de nuestra carpeta sincronizada en la carpeta media de la maquina streama
+cd /vagrant
+cp archivodevideo /opt/streama/media
 -Guardamos y ejecutamos los comandos de servicio
 service streama start 
 ó
@@ -48,3 +51,8 @@ http://192.168.1.131:8080/
 -Aparecera la pagina de inicio de streama e inisiamos sesion
 Usuario:admin
 Contraseña:admin
+-Desde la interfas de streama al ingresar con las credenciales de admin nos redireccionara a el panel de configuracion de streama en este configuraremos las casillas marcada con asterisco "*" que son 
+Upload Directory * :/opt/streama
+Base URL *:http://192.168.1.131:8080/
+Local Video Files:/opt/streama/media
+
