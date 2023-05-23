@@ -7,10 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <title>Punto 1</title>
+  <title>Library</title>
 </head>
 
 <body>
+<div class="container text-center" style="background-color: white; max-height: 80vh;">
+      <h2 class="mt-3 fs-3" style="font-family: sans-serif;">Library</h2>
+    </div>
   <?php
 	
 	
@@ -85,14 +88,15 @@
   <div class="container">
 
     <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <input type="submit" name="get" value="Get" class="btn btn-info" />
-          <input type="submit" value="Post" name="post" class="btn btn-info" />
-          <input type="submit" value="Put" name="put" class="btn btn-info" />
-          <input type="submit" value="Delete" name="delete" class="btn btn-danger" />
-        </div>
-      </div>
+    <div class="form-group row">
+    <div class="col-sm-12 d-flex justify-content-center">
+        <input type="submit" name="get" value="Get" class="btn btn-success mx-2" />
+        <input type="submit" value="Post" name="post" class="btn btn-success mx-2" />
+        <input type="submit" value="Put" name="put" class="btn btn-success mx-2" />
+        <input type="submit" value="Delete" name="delete" class="btn btn-success mx-2" />
+    </div>
+</div>
+
       <div class="text-center form-group row">
         <div class="col-sm-6">
           <input type="text" class="form-control" id="inputid" name="id" placeholder="Id">
@@ -116,8 +120,11 @@
       </div>
 
     </form>
+    <div class="container text-center" style="background-color: white; max-height: 80vh;">
+      <h2 class="mt-3 fs-3" style="font-family: sans-serif;">Report:</h2>
+    </div>
     <div class="container p-5" style="background-color: white; max-height: 80vh;">
-      <textarea class="container text-center p-5" id="result" name="result" rows="4" cols="50"
+      <textarea disabled class="container text-center p-5" id="result" name="result" rows="4" cols="50"
         style="width:1000px;height:250px;border:2px">
   <?php 
 	if(array_key_exists('get', $_POST)) { 
@@ -185,9 +192,6 @@
 		
   ?>
   </textarea>
-    </div>
-    <div class="container text-center" style="background-color: white; max-height: 80vh;">
-      <h2 class="mt-3 fs-3" style="font-family: sans-serif;">Parcial punto 1</h2>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
