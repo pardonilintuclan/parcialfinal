@@ -55,4 +55,7 @@ Contraseña:admin
 Upload Directory * :/opt/streama
 Base URL *:http://192.168.1.131:8080/
 Local Video Files:/opt/streama/media
-
+-Damos Aplpy a todos los cambios, subimos lo mas que pueda el scroll lateral y damos save settings
+-En la parte superior derecha al lado de el usuario admin escojemos la opcion Manage content
+-Damos click en Movies, Create new Movie, ponemos un nombre al video y le damos a Save
+-Ahora se creara un recuadro el cual no tendra adjunto ningun video le damos click al boton rojo enorme que aparece y podemos arrastrar un archivo o dar en local files y nos mostrara todos los archivos de video que tenemos en la carpeta media de la maquina streama.
