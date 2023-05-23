@@ -117,5 +117,5 @@ Abrimos el panel de xxamp
 Damos start al service de appache
 Entramos al navegador a la ruta 
 http://localhost/punto1parcialfinal/
-Damos click en el link subrrallado de phphtmlbooks.php
+Damos click en el link subrrallado de phphtmllibrary.php
 Ahora aparecera la interfas API REST + MYSQL
